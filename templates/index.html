@@ -10,7 +10,7 @@
     <div class='container'>
         {% for i in range(10) %}
         <div class='item'>
-            <p><b>{{ headlines[i] }}</b></p>
+            <a href={{ urls[i] }}> <p><b>{{ headlines[i] }}</b></p> </a>
             <p>{{ snippets[i] }}</p>
         </div>
         {% endfor %}
